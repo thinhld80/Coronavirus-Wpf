@@ -28,7 +28,7 @@ namespace CoronaClient.Services.API
                     PropertyNameCaseInsensitive = true
                 }); ;
 
-                return apiCountries.Select(apiCountry => new CoronavirusCountry()
+                return apiCountries.Take(amoutOfCountries).Select(apiCountry => new CoronavirusCountry()
                 {
                     CountryName = apiCountry.Country,
                     CaseCount = apiCountry.Cases,
