@@ -11,7 +11,7 @@ using System.Windows.Markup;
 
 namespace CoronaClient.Services.API
 {
-    public class APICoronavirusCountryService : ICoronavirusCountryServices
+    public class APICoronavirusCountryService : ICoronavirusCountryService
     {
         public async Task<IEnumerable<CoronavirusCountry>> GetTopCases(int amoutOfCountries)
         {
